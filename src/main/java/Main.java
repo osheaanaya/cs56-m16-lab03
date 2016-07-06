@@ -41,7 +41,7 @@ public class Main {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
       try {
-        connection = DatabaseUrl.extract().getConnection();
+        connection = postgres://sscemlysvuxqap:mXl1CDY1MFPD-2AgOQP1Z8_t6z@ec2-23-21-234-201.compute-1.amazonaws.com:5432/d5vr5brfv70284.extract().getConnection();
 
         Statement stmt = connection.createStatement();
         stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
