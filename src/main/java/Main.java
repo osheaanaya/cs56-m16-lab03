@@ -29,6 +29,7 @@ public class Main {
           Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
           return "E=mc^2: " + energy + " = " + m.toString();
         });
+    get("/ucsb", (req, res) -> "Go Gauchos");
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
